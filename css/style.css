@@ -1,0 +1,93 @@
+body {
+  background-color: darkblue;
+}
+.score {
+  color: red;
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 150%;
+}
+
+.highScore {
+  color: red;
+  display: inline-block;
+  text-align: right;
+  margin: 0 auto;
+  font-size: 150%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 300%;
+  border: 3px solid block;
+}
+#game div {
+  /* border: 1px solid black; */
+  width: 150px;
+  height: 210px;
+  border-radius: 8px;
+  display: inline-flex;
+}
+
+.önKart {
+  background-image: url(../img/kart.jpeg);
+  background-size: cover;
+  /* width: 100%; */
+  /* background-color: darkred; */
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 5px;
+  margin: 5px;
+}
+
+#kart {
+  width: 100%;
+  height: 100%;
+  margin-left: 3px;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.kart {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.arkaKart {
+  /* background-color: blue; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position-y: center;
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.display {
+  text-align: center;
+  width: 65rem;
+  margin: auto;
+  padding: auto;
+}
+
+.gameData {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1690px;
+}
